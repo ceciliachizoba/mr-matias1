@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  
+}
+nav {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background-color: black;  
+  width: 100%;
+  padding: 0px 30px;
+  border-bottom: 2px solid #262525;
+  height: 100px;
+} 
+ul {
+  display: flex;
+}
+nav li {
+  color: white;
+  margin-right: 30px;  /
+}
+nav ul li a {
+  color: white;
+  font-size: 15px;
+  font-family: kanit;
+  font-weight: 200px;
+}
+nav ul li a:hover{
+   color:  rgb(201,243,29);
+ }
+   .hero{ 
+   background-image: url(images/banner-bg.png); 
+    background-size: cover;  
+   background-repeat: no-repeat; 
+   height: 120vh;    
+
+  } 
+.button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    border-color: none;
+}
+.menu{
+    color: white;
+    border:none ;
+    font-size: 55px;
+    
+
+}   
+.menu-bar{  
+    background-color: white;
+    color: black;
+    align-items: center;
+    font-size: 55px;
+}
+.btn{
+width: 900rem;
+border-radius: 5px;
+background-color: rgb(201,243,29);
+font-size: 20px;
+height: 50px;
+
+}
+
+.heros-banner{
+  height: 100vh;
+  background-image: url(images/banner-bg.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin-top: -110px;
+  position: relative;
+  z-index: -9;
+  
+}
+
+.heros-banner .img1{
+  position: absolute;
+  top: 130px;
+  right:160px;
+  width: 20rem;
+  transform: scale(1.12);
+  
+
+}
+
+.heros-writeup{
+  position: absolute;
+  color:white;
+  top:300px;
+  left:10px;
+
+}
+
+ .write-up1{ padding-top: 4px 4px;
+   margin-left: 120px; 
+  font-size: 22px;
+}
+.write-up2{
+  padding: 4px 4px;
+  margin-left: 120px;
+  font-size: 80px;
+  /* border-bottom: 1px; */
+}
+
+.hero1{
+  padding:100px 10px ;
+  margin-left: 70px;
+  font: size 200px; ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+
+
+} 
+.hero2{
+    padding:100px 10px ;
+  margin-left: 70px;
+  font: size 200px; ;
+  
+}
+.navArticle{
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+}
+
+.navArticle .article{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navArticle .article .star{
+  font-size: 55px;
+  color: rgb(189, 248, 41);
+  transform: scale(1.5); 
+
+}
+
+
+.navArticle .article .para{
+  width: 80%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+
+}
+
+.navArticle .article{
+  animation: eg;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes eg {
+  from{
+    transform: translateY(-3px);
+
+  }
+  
+  to{
+    
+    transform: translateY(-20px);
+
+  }
+}
+.mainNav{
+  height: 20vh;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 380px;
+  
+}
+.mainNav ul{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:50px;
+  list-style: none;
+}
+/* .mainNav ul li{
+} */
+
+.mainNav ul li a.active{
+   padding: 20px;
+  background-color: rgb(189, 248, 41);
+  text-decoration: none;
+  color:black;
+}
+.mainNav ul li a{
+   padding:15px 20px;
+  background-color: rgb(10, 10, 10);
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 15px;
+}
+.p-info{
+  padding-top: 10px;
+  font-size: 40px;
+  color: white;
+  padding-left: 40rem;
+}
+.p-latin{
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-size: 17px;
+  padding-left: 40rem;
+  padding-top: 30px;
+}
+.personal{
+  position: relative;
+  margin-left: 300px;
+  margin-top: -300px;
+
+}
+.email{
+  background-color: black;
+  display: flex;
+  color: grey;
+  flex-direction: column;
+  margin-left: 1000px;
+  margin-top: 30px;
+  font-size: 20px;
+  
+}
+.phone{
+  background-color: black;
+  display: flex;
+  color: grey;
+  flex-direction: column;
+  margin-left: 1000px;
+  margin-top: 30px;
+  font-size: 20px;
+
+}
+.s-media{
+   background-color: black;
+   display: flex; 
+   color: gray;
+   flex-direction: row; 
+   margin-left: 700px;
+   margin-top: -100px;
+
+}
+.Address{
+   background-color: black;
+  display: flex;
+  color: grey;
+  flex-direction: column;
+  margin-left: 700px;
+  margin-top: 40px;
+  font-size: 18px;
+
+
+}
+  
+
+  
+
+
+
+
+.hero image{
+    background-image: url(images/banner-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+} 
+
+ 
